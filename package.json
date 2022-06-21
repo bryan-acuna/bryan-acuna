@@ -1,7 +1,7 @@
 {
   "name": "bootstrap",
   "version": "0.1.0",
-  "homepage": "https://bryan-acuna.github.io/bryan-acuna",
+  "homepage": "https://bryan-acuna.github.io/bryan-acuna/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -12,6 +12,7 @@
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "bootstrap": "^5.1.3",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
