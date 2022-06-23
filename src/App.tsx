@@ -16,11 +16,11 @@ function App() {
                   <button className="secondary">Following</button>
               </div>
               <div className="social">
-                  <a ><i className="fa-brands fa-instagram"></i></a>
-                  <a><i className="fa-brands fa-facebook"></i></a>
+                  <a href="/"><i className="fa-brands fa-instagram"></i></a>
+                  <a href="/"><i className="fa-brands fa-facebook"></i></a>
                   <a href="https://www.linkedin.com/in/bryanacuna/"><i className="fa-brands fa-linkedin"></i></a>
-                  <a><i className="fa-brands fa-twitter"></i></a>
-                  <a><i className="fa-brands fa-youtube"></i></a>
+                  <a href="/"><i className="fa-brands fa-twitter"></i></a>
+                  <a href="/"><i className="fa-brands fa-youtube"></i></a>
               </div>
           </div>
           <div className="skills">
