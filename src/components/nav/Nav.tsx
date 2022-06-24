@@ -6,7 +6,7 @@ import "./Nav.css";
 const Nav = () => {
   return (
     <nav>
-      <a className="active" href="#">
+      <a className="active" href="/">
         <AiOutlineHome />
       </a>
       <a href="#about">
