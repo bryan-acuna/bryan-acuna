@@ -5,15 +5,15 @@ import "./Nav.css";
 import { useState } from "react";
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("/#");
   return (
     <nav>
       <a
         onClick={() => {
-          setActiveNav("#");
+          setActiveNav("/#");
         }}
-        className={activeNav === "#" ? "active" : ""}
-        href="#"
+        className={activeNav === "/#" ? "active" : ""}
+        href="/#"
       >
         <AiOutlineHome />
       </a>
