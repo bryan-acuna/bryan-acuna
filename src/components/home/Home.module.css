@@ -4,7 +4,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-section {
+.home-section {
   width: 32rem;
   position: absolute;
   top: 50%;
