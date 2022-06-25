@@ -1,6 +1,5 @@
 import "./About.css";
 import image from "../../assets/moose.png";
-import { BsBadgeArFill } from "react-icons/bs";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
