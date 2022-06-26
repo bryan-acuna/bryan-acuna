@@ -1,5 +1,5 @@
 import CTA from "./CTA";
-import ME from "../../assets/moose.png";
+import ME from "../../assets/moose.jpg";
 import HeaderSocials from "./HeaderSocials";
 import "./Header.css";
 

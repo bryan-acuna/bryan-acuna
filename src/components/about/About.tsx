@@ -1,5 +1,5 @@
 import "./About.css";
-import image from "../../assets/moose.png";
+import image from "../../assets/moose.jpg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
