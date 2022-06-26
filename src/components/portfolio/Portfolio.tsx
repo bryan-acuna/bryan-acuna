@@ -1,12 +1,5 @@
 import "./Portfolio.css";
 
-import IMG1 from "../../assets/anete-lusina-zwsHjakE_iI-unsplash.jpg";
-import IMG2 from "../../assets/ales-nesetril-Im7lZjxeLhg-unsplash.jpg";
-import IMG3 from "../../assets/joanna-kosinska-LAaSoL0LrYs-unsplash.jpg";
-import IMG4 from "../../assets/lee-campbell-DtDlVpy-vvQ-unsplash.jpg";
-import IMG5 from "../../assets/joshua-aragon-BMnhuwFYr7w-unsplash.jpg";
-import IMG6 from "../../assets/thought-catalog-505eectW54k-unsplash.jpg";
-
 export const data = [
   {
     id: "1",
