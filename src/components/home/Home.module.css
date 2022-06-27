@@ -1,101 +1,101 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/*@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");*/
 
-.home-section {
-  width: 32rem;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
-}
-a {
-  text-decoration: none;
-  color: inherit;
-}
+/*.home-section {*/
+/*  width: 32rem;*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  right: 50%;*/
+/*  transform: translate(50%, -50%);*/
+/*  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);*/
+/*}*/
+/*a {*/
+/*  text-decoration: none;*/
+/*  color: inherit;*/
+/*}*/
 
-.personal {
-  background-color: #231e39;
-  padding-top: 5rem;
-  margin: auto;
-}
-.personal .pro {
-  background-color: #febb0b;
-  color: #231e39;
-  font-size: 1.4rem;
-  position: absolute;
-  top: 1.5rem;
-  left: 2rem;
-  padding: 0.1rem 0.7rem;
-  border: 1px solid #febb0b;
-  border-radius: 0.2rem;
-}
+/*.personal {*/
+/*  background-color: #231e39;*/
+/*  padding-top: 5rem;*/
+/*  margin: auto;*/
+/*}*/
+/*.personal .pro {*/
+/*  background-color: #febb0b;*/
+/*  color: #231e39;*/
+/*  font-size: 1.4rem;*/
+/*  position: absolute;*/
+/*  top: 1.5rem;*/
+/*  left: 2rem;*/
+/*  padding: 0.1rem 0.7rem;*/
+/*  border: 1px solid #febb0b;*/
+/*  border-radius: 0.2rem;*/
+/*}*/
 
-.personal img {
-  border-radius: 50%;
-  border: 0.2rem solid #03bfcb;
-  width: 12rem;
-  height: 12rem;
-  display: block;
-  margin: 2rem auto 0 auto;
-}
-.personal .name {
-  font-size: 5rem;
-  text-align: center;
-}
-.personal .country {
-  text-align: center;
-  font-size: 1.3rem;
-  margin: 0.2rem;
-}
-.personal .stack {
-  text-align: center;
-  font-size: 1.6rem;
-  margin-top: 1.5rem;
-}
-.personal .personal-buttons {
-  margin: 1rem 0;
-  text-align: center;
-}
+/*.personal img {*/
+/*  border-radius: 50%;*/
+/*  border: 0.2rem solid #03bfcb;*/
+/*  width: 12rem;*/
+/*  height: 12rem;*/
+/*  display: block;*/
+/*  margin: 2rem auto 0 auto;*/
+/*}*/
+/*.personal .name {*/
+/*  font-size: 5rem;*/
+/*  text-align: center;*/
+/*}*/
+/*.personal .country {*/
+/*  text-align: center;*/
+/*  font-size: 1.3rem;*/
+/*  margin: 0.2rem;*/
+/*}*/
+/*.personal .stack {*/
+/*  text-align: center;*/
+/*  font-size: 1.6rem;*/
+/*  margin-top: 1.5rem;*/
+/*}*/
+/*.personal .personal-buttons {*/
+/*  margin: 1rem 0;*/
+/*  text-align: center;*/
+/*}*/
 
-.personal button {
-  border: 1px solid #03bfcb;
-  padding: 0.8rem 1.8rem;
-  border-radius: 0.3rem;
-  font-size: 1.3rem;
-}
-.personal button.primary {
-  background-color: #03bfcb;
-  color: #231e39;
-  margin-right: 0.5rem;
-}
-.personal button.secondary {
-  background-color: transparent;
-  color: #02899c;
-  margin-left: 0.5rem;
-}
-.personal .social {
-  text-align: center;
-}
-.social i {
-  font-size: 1.3rem;
-  margin: 1rem 0.4rem;
-}
+/*.personal button {*/
+/*  border: 1px solid #03bfcb;*/
+/*  padding: 0.8rem 1.8rem;*/
+/*  border-radius: 0.3rem;*/
+/*  font-size: 1.3rem;*/
+/*}*/
+/*.personal button.primary {*/
+/*  background-color: #03bfcb;*/
+/*  color: #231e39;*/
+/*  margin-right: 0.5rem;*/
+/*}*/
+/*.personal button.secondary {*/
+/*  background-color: transparent;*/
+/*  color: #02899c;*/
+/*  margin-left: 0.5rem;*/
+/*}*/
+/*.personal .social {*/
+/*  text-align: center;*/
+/*}*/
+/*.social i {*/
+/*  font-size: 1.3rem;*/
+/*  margin: 1rem 0.4rem;*/
+/*}*/
 
-.skills {
-  background-color: #1f1a36;
-  padding: 1.6rem 1rem;
-}
-.skills h2 {
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
+/*.skills {*/
+/*  background-color: #1f1a36;*/
+/*  padding: 1.6rem 1rem;*/
+/*}*/
+/*.skills h2 {*/
+/*  text-transform: uppercase;*/
+/*  font-size: 1.2rem;*/
+/*  margin-bottom: 0.5rem;*/
+/*}*/
 
-.skills ul li {
-  display: inline-block;
-  font-size: 1.2rem;
-  border: 0.2rem solid #272240;
-  border-radius: 0.2rem;
-  padding: 0.4rem;
-  margin: 0.2rem;
-}
+/*.skills ul li {*/
+/*  display: inline-block;*/
+/*  font-size: 1.2rem;*/
+/*  border: 0.2rem solid #272240;*/
+/*  border-radius: 0.2rem;*/
+/*  padding: 0.4rem;*/
+/*  margin: 0.2rem;*/
+/*}*/
