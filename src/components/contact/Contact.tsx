@@ -27,8 +27,6 @@ export const contacts = [
 ];
 
 const Contact = () => {
-  const form = useRef<HTMLFormElement>(null);
-
   const sendEmail = (e: any) => {
     e.preventDefault();
     emailjs
