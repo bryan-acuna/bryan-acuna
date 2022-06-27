@@ -3,7 +3,6 @@ import emailjs from "emailjs-com";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
-import { useRef } from "react";
 
 export const contacts = [
   {
