@@ -1,0 +1,14 @@
+.notes {
+  display: flex;
+}
+.notes_footer {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 0;
+  height: 2.5rem;
+}
+
+.notes_footer p {
+  color: #ccc;
+}

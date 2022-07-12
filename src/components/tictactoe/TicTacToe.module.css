@@ -1,0 +1,44 @@
+.tictactoe {
+  height: 100vh;
+  width: 100vw;
+  background: #5e2db3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tictactoe .title {
+  font-size: 40px;
+  color: aqua;
+  text-shadow: 0 0 8px #222;
+  font-family: cursive;
+}
+.tictactoe .board {
+  width: 480px;
+  height: 90vh;
+  background: #5e2db3;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.tictactoe .row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+}
+.tictactoe .square {
+  flex: 33% 1;
+  height: 100%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  background: #5e2db3;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 5px 15px #629ae9;
+}
+.tictactoe .square:hover {
+  background: transparent;
+}

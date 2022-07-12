@@ -1,4 +1,5 @@
 import "./Portfolio.css";
+import { Link } from "react-router-dom";
 
 export const data = [
   {
@@ -47,7 +48,7 @@ export const data = [
       "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHBvcnRmb2xpb3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     title: "Project 6",
     github: "https://github.com",
-    demo: "https://github.com",
+    demo: "https://bryan-acuna.com/todo",
   },
 ];
 
@@ -67,9 +68,9 @@ const Portfolio = () => {
               <a className="btn" href={project.github}>
                 Github
               </a>
-              <a className="btn btn-primary" href={project.demo}>
+              <Link className="btn btn-primary" to="/todo">
                 Live Demo
-              </a>
+              </Link>
             </div>
           </article>
         ))}

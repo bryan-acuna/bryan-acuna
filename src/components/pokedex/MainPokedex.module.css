@@ -1,0 +1,53 @@
+.pokedex {
+  text-align: center;
+}
+.pokedex_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.pokedex_lost {
+  background: #e91e63;
+}
+.pokedex_winner {
+  background: #4caf50;
+}
+
+.pokecard {
+  background: white;
+  border-radius: 2rem;
+  width: 300px;
+  padding: 10px;
+  margin: 1rem;
+  border: 2px solid mediumseagreen;
+  text-align: center;
+  color: black;
+}
+
+.pokecard_title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.pokecard_data {
+  font-size: 80%;
+}
+
+.pokecard_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eceff1;
+  height: 250px;
+  border-radius: 3px;
+  margin-bottom: 1rem;
+}
+.pokecard img {
+  transition: all ease 500ms;
+}
+
+.pokecard img:hover {
+  transform: scale(1.25);
+  opacity: 0.7;
+}

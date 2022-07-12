@@ -3,9 +3,19 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Login from "./components/login/Login";
 import Home from "./components/home/Home";
+import Styles from "./components/styles/Styles";
+import User from "./components/user/User";
+import MainPokedex from "./components/pokedex/MainPokedex";
+import ToDoList from "./components/todolist/ToDoList";
+import TicTacToe from "./components/tictactoe/TicTacToe";
+import NoteTaking from "./pages/NoteTaking/NoteTaking";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
+import Weather from "./pages/Weather/Weather";
+import Homepage from "./pages/Home/Homepage";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -13,11 +23,20 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Router>
+      <Provider store={store}>
         <Routes>
-            <Route path="/" element={<App/>}/>
-            <Route path="/pro" element={<Home/>}/>
-            <Route path="login" element={<Login/>}/>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/pro" element={<Home />} />
+          <Route path="/styles" element={<Styles />} />
+          <Route path="/user" element={<User />} />
+          <Route path="login" element={<Login />} />
+          <Route path="pokemon" element={<MainPokedex />} />
+          <Route path="todo" element={<ToDoList />} />
+          <Route path="tictactoe" element={<TicTacToe />} />
+          <Route path="notes" element={<NoteTaking />} />
+          <Route path="weather" element={<Weather />} />
         </Routes>
+      </Provider>
     </Router>
   </React.StrictMode>
 );

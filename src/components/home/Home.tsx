@@ -4,7 +4,7 @@ import styles from "./Home.module.css";
 const Home = () => {
   return (
     <>
-      <section className={styles.homeSection}>
+      <section className={`${styles.home__section} ${styles.personal}`}>
         <div className={styles.pro}>
           <span className={styles.pro}>PRO</span>
           <img

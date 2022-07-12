@@ -1,5 +1,6 @@
+import styles from "./Header.module.css";
 const CTA = () => (
-  <div className="cta">
+  <div className={styles.cta}>
     <a href="/" className="btn">
       Download CV
     </a>

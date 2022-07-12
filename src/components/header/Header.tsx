@@ -1,21 +1,21 @@
 import CTA from "./CTA";
 import ME from "../../assets/moose.jpg";
 import HeaderSocials from "./HeaderSocials";
-import "./Header.css";
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
-    <header>
-      <div className="container header__container">
+    <header className={styles.header}>
+      <div className={styles.header__container}>
         <h5>Hello I'm</h5>
         <h1>Bryan Acuna</h1>
-        <h5 className="text-light">Fullstack Developer</h5>
+        <h5 className={styles.text__light}>Fullstack Developer</h5>
         <CTA />
         <HeaderSocials />
-        <div className="me">
+        <div className={styles.me}>
           <img src={ME} alt="me" />
         </div>
-        <a href="#contact" className="scroll__down">
+        <a href="#contact" className={styles.scroll__down}>
           Scroll Down
         </a>
       </div>

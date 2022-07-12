@@ -1,18 +1,18 @@
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
-import "./Nav.css";
+import styles from "./Nav.module.css";
 import { useState } from "react";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("/#");
   return (
-    <nav>
+    <nav className={styles.home__nav}>
       <a
         onClick={() => {
           setActiveNav("/#");
         }}
-        className={activeNav === "/#" ? "active" : ""}
+        className={` ${activeNav === "/#" ? styles.home__active : ""}`}
         href="/#"
       >
         <AiOutlineHome />
@@ -22,25 +22,25 @@ const Nav = () => {
         onClick={() => {
           setActiveNav("#about");
         }}
-        className={activeNav === "#about" ? "active" : ""}
+        className={` ${activeNav === "#about" ? styles.home__active : ""}`}
       >
         <AiOutlineUser />
       </a>
       <a
-        href="#experiences"
+        href="#experience"
         onClick={() => {
-          setActiveNav("#experiences");
+          setActiveNav("#experience");
         }}
-        className={activeNav === "#experiences" ? "active" : ""}
+        className={` ${activeNav === "#experience" ? styles.home__active : ""}`}
       >
         <BiBook />
       </a>
       <a
-        href="#services"
+        href="#portfolio"
         onClick={() => {
-          setActiveNav("#services");
+          setActiveNav("#portfolio");
         }}
-        className={activeNav === "#services" ? "active" : ""}
+        className={` ${activeNav === "#portfolio" ? styles.home__active : ""}`}
       >
         <RiServiceLine />
       </a>
@@ -49,7 +49,7 @@ const Nav = () => {
         onClick={() => {
           setActiveNav("#contact");
         }}
-        className={activeNav === "#contact" ? "active" : ""}
+        className={` ${activeNav === "#contact" ? styles.home__active : ""}`}
       >
         <BiMessageSquareDetail />
       </a>

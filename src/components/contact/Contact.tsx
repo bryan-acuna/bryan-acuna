@@ -1,4 +1,4 @@
-import "./Contact.css";
+import styles from "./Contact.module.css";
 import emailjs from "emailjs-com";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
@@ -49,11 +49,11 @@ const Contact = () => {
     <section id="contact">
       <h5>Get in Touch</h5>
       <h2>Contact Me</h2>
-      <div className="container contacts__container">
-        <div className="contacts__options">
+      <div className={`${styles.container} ${styles.contacts__container}`}>
+        <div className={styles.contacts__options}>
           {contacts.map((contact) => (
-            <article className="contacts__option">
-              {<contact.icon className="contacts__option-icon" />}
+            <article className={styles.contacts__option}>
+              {<contact.icon className={styles.contacts__option_icon} />}
               <h4>{contact.title}</h4>
               <h5>{contact.info}</h5>
               <a href={`mailto:${contact.info}`}>{contact.contact}</a>
