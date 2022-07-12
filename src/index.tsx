@@ -9,12 +9,12 @@ import Styles from "./components/styles/Styles";
 import User from "./components/user/User";
 import MainPokedex from "./components/pokedex/MainPokedex";
 import ToDoList from "./components/todolist/ToDoList";
-import TicTacToe from "./components/tictactoe/TicTacToe";
 import NoteTaking from "./pages/NoteTaking/NoteTaking";
 import { Provider } from "react-redux";
 import { store } from "./store/store";
 import Weather from "./pages/Weather/Weather";
 import Homepage from "./pages/Home/Homepage";
+import TicTacToe from "./pages/TicTacToe/TicTacToe";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement

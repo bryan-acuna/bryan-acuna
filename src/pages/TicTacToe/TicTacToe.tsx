@@ -1,6 +1,8 @@
 import styles from "./TicTacToe.module.css";
-import Square from "./square/Square";
+import Square from "./Square/Square";
 import { useEffect, useState } from "react";
+import { useAppDispatch, useAppSelector } from "../../hooks";
+import { changePlayer, setWinner } from "../../store/tictactoe/tictactoeSlice";
 
 export const Patterns = [
   [0, 1, 2],
@@ -25,27 +27,58 @@ const TicTacToe = () => {
     "",
     "",
   ]);
-  const [player, setPlayer] = useState<string>("X");
+  const player = useAppSelector((state) => state.tictactoe.player);
+  let dispatch = useAppDispatch();
   const [result, setResult] = useState({ winner: "none", state: "none" });
-  const [win, setWin] = useState(false);
+  const win = useAppSelector((state) => state.tictactoe.win);
 
   useEffect(() => {
+    const checkWin = () => {
+      Patterns.forEach((currPattern) => {
+        const firstPlayer = board[currPattern[0]];
+        if (firstPlayer === "") return;
+        let foundWinner = true;
+        currPattern.forEach((index) => {
+          if (board[index] !== firstPlayer) {
+            foundWinner = false;
+          }
+        });
+        if (foundWinner) {
+          setResult((prevMovies) => ({
+            ...prevMovies,
+            winner: player,
+            state: "won",
+          }));
+        }
+      });
+    };
+    const checkIfTie = () => {
+      let filled = true;
+      board.forEach((square) => {
+        if (square === "") {
+          filled = false;
+          return filled;
+        }
+      });
+      if (filled) {
+        setResult((prevMovies) => ({
+          ...prevMovies,
+          state: "tie",
+        }));
+      }
+    };
     checkIfTie();
-    if (player === "X") {
-      setPlayer("O");
-    } else {
-      setPlayer("X");
-    }
+    dispatch(changePlayer());
     checkWin();
   }, [board]);
 
   useEffect(() => {
     if (result.state === "won") {
       alert(`Game finished! Winner Player: ${result.winner}`);
-      setWin(true);
+      dispatch(setWinner(true));
     } else if (result.state === "tie") {
       alert(`Game finished! Tied game`);
-      setWin(true);
+      dispatch(setWinner(true));
     }
   }, [result]);
 
@@ -65,45 +98,9 @@ const TicTacToe = () => {
 
   const restartGame = () => {
     setBoard(["", "", "", "", "", "", "", "", ""]);
-    setPlayer("X");
-    setWin(false);
+    dispatch(setWinner(false));
   };
 
-  const checkIfTie = () => {
-    let filled = true;
-    board.forEach((square) => {
-      if (square === "") {
-        filled = false;
-        return filled;
-      }
-    });
-    if (filled) {
-      setResult((prevMovies) => ({
-        ...prevMovies,
-        state: "tie",
-      }));
-    }
-  };
-
-  const checkWin = () => {
-    Patterns.forEach((currPattern) => {
-      const firstPlayer = board[currPattern[0]];
-      if (firstPlayer === "") return;
-      let foundWinner = true;
-      currPattern.forEach((index) => {
-        if (board[index] !== firstPlayer) {
-          foundWinner = false;
-        }
-      });
-      if (foundWinner) {
-        setResult((prevMovies) => ({
-          ...prevMovies,
-          winner: player,
-          state: "won",
-        }));
-      }
-    });
-  };
   return (
     <div className={styles.tictactoe}>
       <div className={styles.board}>
