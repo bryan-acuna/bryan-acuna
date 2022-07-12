@@ -28,11 +28,11 @@ const TicTacToe = () => {
     "",
   ]);
   const player = useAppSelector((state) => state.tictactoe.player);
-  let dispatch = useAppDispatch();
   const [result, setResult] = useState({ winner: "none", state: "none" });
   const win = useAppSelector((state) => state.tictactoe.win);
-
+  const dispatch = useAppDispatch();
   useEffect(() => {
+    const dispatch = useAppDispatch();
     const checkWin = () => {
       Patterns.forEach((currPattern) => {
         const firstPlayer = board[currPattern[0]];
@@ -73,6 +73,7 @@ const TicTacToe = () => {
   }, [board]);
 
   useEffect(() => {
+    const dispatch = useAppDispatch();
     if (result.state === "won") {
       alert(`Game finished! Winner Player: ${result.winner}`);
       dispatch(setWinner(true));
