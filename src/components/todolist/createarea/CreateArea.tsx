@@ -1,5 +1,5 @@
 import styles from "./CreateArea.module.css";
-import { ChangeEvent, FormEvent, MouseEventHandler, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { NoteExtraProps } from "../note/Note";
 import { Fab } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";

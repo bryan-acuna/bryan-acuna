@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import CourseGoalList from "./CourseGoals/CourseGoalList/CourseGoalList";
 import CourseInput from "./CourseGoals/CourseInput/CourseInput";
 

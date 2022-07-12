@@ -1,6 +1,3 @@
-import styles from "./Weather.module.css";
-import { useAppDispatch, useAppSelector } from "../../hooks";
-import { addNote } from "../../store/notes/notesSlice";
 import SearchMain from "./SearchMain";
 
 const Weather = () => {

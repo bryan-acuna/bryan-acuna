@@ -1,20 +1,13 @@
 import styles from "./Weather.module.css";
 
-import {
-  ChangeEventHandler,
-  MouseEventHandler,
-  useEffect,
-  useState,
-} from "react";
-import WeatherDetails, { WeatherDetailsProps } from "./WeatherDetails";
+import { ChangeEventHandler, MouseEventHandler, useState } from "react";
+import WeatherDetails  from "./WeatherDetails";
 import { useFetchWeatherQuery } from "../../store/weather/weather-api-slice";
 
 const SearchMain = () => {
   const [city, setCity] = useState("");
   const [searchCity, setSearchCity] = useState("quito");
-  const { data, isFetching } = useFetchWeatherQuery(searchCity);
-
-
+  const { data } = useFetchWeatherQuery(searchCity);
 
   const onChangeInput: ChangeEventHandler<HTMLInputElement> = (e) => {
     setCity(e.target.value);

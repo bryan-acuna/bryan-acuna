@@ -1,5 +1,4 @@
 import styles from "./Note.module.css";
-import { Fab } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 export interface NoteProps extends NoteExtraProps {

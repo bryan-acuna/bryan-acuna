@@ -1,5 +1,3 @@
-import Pokedex from "./pokedex/Pokedex";
-import styles from "./MainPokedex.module.css";
 import Pokegame from "./pokegame/pokegame";
 
 const pokemon = [

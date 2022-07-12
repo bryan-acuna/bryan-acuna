@@ -1,8 +1,6 @@
 import styles from "./TicTacToe.module.css";
 import Square from "./square/Square";
 import { useEffect, useState } from "react";
-import button from "../styles/UI/Button";
-import square from "./square/Square";
 
 export const Patterns = [
   [0, 1, 2],
@@ -33,7 +31,7 @@ const TicTacToe = () => {
 
   useEffect(() => {
     checkIfTie();
-    if (player == "X") {
+    if (player === "X") {
       setPlayer("O");
     } else {
       setPlayer("X");
@@ -52,7 +50,7 @@ const TicTacToe = () => {
   }, [result]);
 
   const clickSquare = (squareNumber: number) => {
-    if (board[squareNumber] == "" && !win) {
+    if (board[squareNumber] === "" && !win) {
       setBoard((prevState) => {
         const newState = [...prevState];
         if (player === "X") {
@@ -90,10 +88,10 @@ const TicTacToe = () => {
   const checkWin = () => {
     Patterns.forEach((currPattern) => {
       const firstPlayer = board[currPattern[0]];
-      if (firstPlayer == "") return;
+      if (firstPlayer === "") return;
       let foundWinner = true;
       currPattern.forEach((index) => {
-        if (board[index] != firstPlayer) {
+        if (board[index] !== firstPlayer) {
           foundWinner = false;
         }
       });
