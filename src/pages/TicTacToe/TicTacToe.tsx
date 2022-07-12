@@ -32,7 +32,6 @@ const TicTacToe = () => {
   const win = useAppSelector((state) => state.tictactoe.win);
   const dispatch = useAppDispatch();
   useEffect(() => {
-    const dispatch = useAppDispatch();
     const checkWin = () => {
       Patterns.forEach((currPattern) => {
         const firstPlayer = board[currPattern[0]];
@@ -70,10 +69,9 @@ const TicTacToe = () => {
     checkIfTie();
     dispatch(changePlayer());
     checkWin();
-  }, [board]);
+  }, [board, dispatch]);
 
   useEffect(() => {
-    const dispatch = useAppDispatch();
     if (result.state === "won") {
       alert(`Game finished! Winner Player: ${result.winner}`);
       dispatch(setWinner(true));
@@ -81,7 +79,7 @@ const TicTacToe = () => {
       alert(`Game finished! Tied game`);
       dispatch(setWinner(true));
     }
-  }, [result]);
+  }, [result, dispatch]);
 
   const clickSquare = (squareNumber: number) => {
     if (board[squareNumber] === "" && !win) {
