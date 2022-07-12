@@ -69,7 +69,7 @@ const TicTacToe = () => {
     checkIfTie();
     dispatch(changePlayer());
     checkWin();
-  }, [board, dispatch]);
+  }, [board, dispatch, player]);
 
   useEffect(() => {
     if (result.state === "won") {
