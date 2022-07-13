@@ -15,7 +15,7 @@ const Food = () => {
     <>
       <FoodNav />
       <div className={styles.food__container}>
-        <section className={styles.section__1}>
+        <section id="main" className={styles.section__1}>
           <h1 className={styles.section__heading}>Variety of Foods</h1>
           <div>
             <Icon />

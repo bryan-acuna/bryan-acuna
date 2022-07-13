@@ -36,7 +36,7 @@ const FoodNav = () => {
   return (
     <>
       <nav className={menu.nav}>
-        <a href="#" className={styles.food__navbar__link}>
+        <a href="#main" className={styles.food__navbar__link}>
           <FaHome className={styles.food__navbar__link__icon} />
           <span>Home</span>
         </a>
@@ -44,11 +44,11 @@ const FoodNav = () => {
           <FaUtensils className={styles.food__navbar__link__icon} />
           <span>Meals</span>
         </a>
-        <a href="#" className={styles.food__navbar__link}>
+        <a href="#main" className={styles.food__navbar__link}>
           <FaHamburger className={styles.food__navbar__link__icon} />
           <span>Burger</span>
         </a>
-        <a href="#" className={styles.food__navbar__link}>
+        <a href="#main" className={styles.food__navbar__link}>
           <FaPizzaSlice className={styles.food__navbar__link__icon} />
           <span>Pizza</span>
         </a>

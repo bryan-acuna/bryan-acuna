@@ -6,7 +6,7 @@ interface GalleryCardProps {
 
 const GalleryCard = ({ img, title }: GalleryCardProps) => {
   return (
-    <a href="#" className={styles.gallery__card} title="Order Now">
+    <a href="#main" className={styles.gallery__card} title="Order Now">
       <img className={styles.gallery__img} src={img} alt="" />
       <h3 className={styles.gallery__name}>{title}</h3>
       <p className={styles.gallery__p}>
