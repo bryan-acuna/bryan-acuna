@@ -45,6 +45,7 @@ const TicTacToe = () => {
         if (foundWinner) {
           setResult((prevMovies) => ({
             ...prevMovies,
+
             winner: player,
             state: "won",
           }));
@@ -69,7 +70,7 @@ const TicTacToe = () => {
     checkIfTie();
     dispatch(changePlayer());
     checkWin();
-  }, [board, dispatch, player]);
+  }, [player, board, dispatch]);
 
   useEffect(() => {
     if (result.state === "won") {
