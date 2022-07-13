@@ -44,11 +44,11 @@ const FoodNav = () => {
           <FaUtensils className={styles.food__navbar__link__icon} />
           <span>Meals</span>
         </a>
-        <a href="" className={styles.food__navbar__link}>
+        <a href="#" className={styles.food__navbar__link}>
           <FaHamburger className={styles.food__navbar__link__icon} />
           <span>Burger</span>
         </a>
-        <a href="" className={styles.food__navbar__link}>
+        <a href="#" className={styles.food__navbar__link}>
           <FaPizzaSlice className={styles.food__navbar__link__icon} />
           <span>Pizza</span>
         </a>
