@@ -1,5 +1,4 @@
 import styles from "../ClassicCars.module.css";
-import img1 from "../../../assets/car/car-1.jpg";
 
 interface CarCardProps {
   header: string;
