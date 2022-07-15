@@ -1,5 +1,5 @@
 .header {
-  height: 100vh;
+  height: 80vh;
   padding-top: 7rem;
   overflow: hidden;
 }
@@ -7,14 +7,16 @@
   text-align: center;
   height: 100%;
   position: relative;
+  font-size: 3rem;
+  margin-bottom: 0;
 }
 
 /*============= CTA =============*/
 
 .cta {
-  margin-top: 2.5rem;
+  margin: 2.5rem;
   display: flex;
-  gap: 1.2rem;
+  gap: 3rem;
   justify-content: center;
 }
 
@@ -38,10 +40,10 @@
 /*============= ME =============*/
 
 .me {
-  width: 22rem;
+  width: 40rem;
   height: 30rem;
   position: absolute;
-  left: calc(50% - 11rem);
+  left: calc(50% - 20rem);
   margin-top: 4rem;
 }
 
@@ -66,7 +68,7 @@
 /* ================== Media Queries ===================== */
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: 50vh;
   }
   .header__socials,
   .scroll__down {

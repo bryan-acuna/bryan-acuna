@@ -1,35 +1,36 @@
-import "./About.css";
+import "./About.module.css";
 import image from "../../assets/moose.jpg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
 import Card from "./Card";
+import styles from "./About.module.css";
 const About = () => {
   return (
     <section id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
+      <div className={styles.about__container}>
+        <div className={styles.about__me}>
+          <div className={styles.about__me__image}>
             <img src={image} alt="About" />
           </div>
         </div>
-        <div className="about__content">
-          <div className="about__cards">
+        <div className={styles.about__content}>
+          <div className={styles.about__cards}>
             <Card
-              icon={<FaAward className="about__icon" />}
+              icon={<FaAward className={styles.about__icon} />}
               title="Experience"
               desc="30 years"
             />
             <Card
-              icon={<FiUsers className="about__icon" />}
+              icon={<FiUsers className={styles.about__icon} />}
               title="Client"
               desc="30 years"
             />
             <Card
-              icon={<VscFolderLibrary className="about__icon" />}
+              icon={<VscFolderLibrary className={styles.about__icon} />}
               title="Projects"
               desc="30 years"
             />

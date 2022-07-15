@@ -72,7 +72,7 @@ const WeatherDetails = ({
   let timeStr = `${date.getHours()}:${date.getMinutes()}`;
 
   return (
-    <>
+    <body className={styles.weather__body}>
       <article className={styles.widget}>
         <div className={styles.weatherIcon}>{weatherState}</div>
         <div className={styles.weatherInfo}>
@@ -130,7 +130,7 @@ const WeatherDetails = ({
           </div>
         </div>
       </article>
-    </>
+    </body>
   );
 };
 

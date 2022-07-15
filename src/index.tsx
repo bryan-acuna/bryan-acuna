@@ -16,6 +16,7 @@ import Weather from "./pages/Weather/Weather";
 import Homepage from "./pages/Home/Homepage";
 import TicTacToe from "./pages/TicTacToe/TicTacToe";
 import Food from "./pages/Food/Food";
+import ClassicCars from "./pages/ClassicCars/ClassicCars";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -36,6 +37,7 @@ root.render(
           <Route path="notes" element={<NoteTaking />} />
           <Route path="weather" element={<Weather />} />
           <Route path="food" element={<Food />} />
+          <Route path="cars" element={<ClassicCars />} />
         </Routes>
       </Provider>
     </Router>

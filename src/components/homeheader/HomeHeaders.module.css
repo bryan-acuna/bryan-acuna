@@ -1,0 +1,8 @@
+.header__h5 {
+  text-align: center;
+  color: var(--color-light);
+}
+.header__h2 {
+  text-align: center;
+  color: var(--color-primary);
+}
